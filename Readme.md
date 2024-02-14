@@ -44,9 +44,9 @@ sudo lsblk
 
 Check file system usage once more:
 
-\```bash
+```
 df -hT
-\```
+```
 
 ### Extend the File System on `/`
 
@@ -54,14 +54,14 @@ Depending on your file system type, use one of the following commands:
 
 For XFS file system:
 
-\```bash
+```
 sudo xfs_growfs -d /
-\```
+```
 
 For Ext4 file system:
 
-\```bash
+```
 sudo resize2fs /dev/xvda1
-\```
+```
 
 After completing these steps, your EBS volume's file system will be extended to utilize the full capacity of the increased volume size.
