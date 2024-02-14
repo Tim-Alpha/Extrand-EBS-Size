@@ -63,5 +63,8 @@ For Ext4 file system:
 ```
 sudo resize2fs /dev/xvda1
 ```
-
+### For checking file size
+```
+sudo find / -type f -size +10M -exec ls -lh {} \;
+```
 After completing these steps, your EBS volume's file system will be extended to utilize the full capacity of the increased volume size.
