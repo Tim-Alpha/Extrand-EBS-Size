@@ -18,29 +18,29 @@ Once the volume size is increased, extend the Linux file system to make use of t
 
 First, check the file system usage:
 
-\```bash
+```
 df -hT
-\```
+```
 
 Check whether the volume has a partition:
 
-\```bash
+```
 sudo lsblk
-\```
+```
 
 ### Extend the Partition:
 
 To extend the partition, use the `growpart` tool:
 
-\```bash
+```
 sudo growpart /dev/xvda 1
-\```
+```
 
 After growing the partition, check the block devices again:
 
-\```bash
+```
 sudo lsblk
-\```
+```
 
 Check file system usage once more:
 
